@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <div className = "nav-container">
       <div className = "logo-container">
-        <Avatar src = {icon} size = "small"  />
+        <Avatar src = {icon} size = "large"  />
         <Typography.Title level={2} className= "logo">
-            <Link to="/">Cryptoverse</Link>
+            <Link to="/">Crypto Tracker</Link>
         </Typography.Title>
         {/* <Button className= "menu-control-container">
 
@@ -33,4 +33,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
