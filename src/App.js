@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Switch, Route, Link} from 'react-router-dom';
+import { Layout, Typography, Space} from 'antd';
 
-function App() {
+
+import { Navbar } from './components';
+import './App.css'
+
+import { Components } from 'antd/lib/date-picker/generatePicker';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div classname = "app">
+      <div classname = "navbar">
+        <Navbar />
+      </div>
+
+      <div classname = "main" > 
+
+      </div>
+      <div classname = "footer">
+
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
