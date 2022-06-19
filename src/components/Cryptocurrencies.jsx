@@ -13,7 +13,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
 
-
+  if (isFetching) return 'Loading..';
 
   return (
     <>
